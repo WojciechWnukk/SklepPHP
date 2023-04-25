@@ -1,1 +1,1 @@
-# SklepPHP
+Projekt sklepu internetowego współpracujący z bazą danych MySQL. Przykładowe funkcjonalności: - Dodawanie, usuwanie i edytowanie produktów w koszyku, - Rejestracja, logowanie oraz zmiana hasła użytkownika w połączeniu z bazą danych.
