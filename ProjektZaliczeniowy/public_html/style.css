@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/acc-page/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.button-box {
+    width: 300px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px grey;
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(23,255,249,1), rgba(4,0,50,1));
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons {
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 grey;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.check-box {
+    margin: 30px 10px 70px 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    color: #777;
+    font-size: 12px;
+    left: 30px;
+    bottom: 68px;
+    position: absolute;
+}
+
+label::before{
+    content:"";
+    background: url("icons/css-icons/check_circle-24px.svg");
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top: -1px;
+    
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+input[type="checkbox"]:checked + label::before{
+    transform: scale(1) rotateZ(0deg);
+}
+label::after{
+    content:"";
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top: -1px;
+    border-radius: 50%;
+}
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 60px 10px 0 0;
+    background: linear-gradient(to right, rgba(23,255,249,1), rgba(4,0,50,1));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+body {
+  color: #fff;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+	background:url(images/acc-page/banner2.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+
+
+.form-wrapper {
+width:300px;
+height:370px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  margin: -184px 0px 0px -155px;
+  background: rgba(0,0,0,0.27);
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
+}
+
+.form-item {
+width:100%;
+}
+
+
+h3{
+  font-size: 25px;
+  font-weight: 640;
+  margin-bottom: 10px;
+  color: #e7e7e7;
+  padding:6px;
+  font-family:'sans-serif','helvetica';
+}
+
+
+
+.form-item input{
+  border: none;
+  background:transparent;
+  color: #fff;
+  margin-top:11px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  height: 49px;
+  padding: 0 16px;
+  width: 100%;
+  padding-left: 55px;
+
+}
+input[type='password']{
+	background: transparent url("img/pass.jpg") no-repeat;
+	background-position: 10px 50%;
+}
+input[type='text']{
+	background: transparent url("img/user.jpg") no-repeat;
+	background-position: 10px 50%;
+
+}
+
+.form-item input:focus {
+  outline: none;
+  border:1.4px solid #cfecf0;
+}
+
+.button-panel {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #00b6df;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'helvetica','Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.6s linear;
+  width: 100%;
+  margin-top:10px;
+}
+
+.button:hover {
+  background: #6eb7cb;
+}
+
+.form-item input, .button-panel .button {
+  border-radius: 2px
+}
+
+.reminder {
+  text-align: center;
+}
+
+.reminder a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.reminder a:hover {
+  color: #cab6bf;
+}
